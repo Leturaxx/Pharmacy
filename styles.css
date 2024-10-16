@@ -1,0 +1,135 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #e1e1e1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 5%;
+    z-index: 1000; /* Ensure the nav is above the background */
+    position: fixed; /* Keep the nav at the top */
+    top: 0; /* Align it to the top */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Ensure it spans the full width */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-right: 30px; /* Add margin to the right of each link */
+}
+
+.nav-links li:last-child {
+    margin-right: 0; /* Remove margin from the last link */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #555; /* Changed to light black */
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.nav-links li a:hover {
+    color: #e94b35;
+}
+
+/* Talk to an Expert Button */
+.cta-button {
+    background-color: #e94b35;
+    color: black; /* Changed text color to black */
+    padding: 10px 20px; /* Increased padding to expand the box */
+    border-radius: 5px;
+    font-size: 12px; /* Reduced font size */
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    line-height: 1.5;
+    margin-left: 10px; /* Adjusted margin to bring button closer */
+}
+
+.cta-button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/* Background image styling */
+.background-image {
+    background-image: url('backgroundImage.jpeg'); /* Replace with the actual image path */
+    background-size: cover; /* Ensure the image stays proportional */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    height: calc(100vh - 60px); /* Set the height to the full viewport */
+}
+
+/* Main Content */
+.main-content {
+    text-align: left; /* Keep text aligned to the left */
+    color: #333;
+    padding-top: 100px; /* Adjust padding to move the content below the nav */
+}
+
+.main-content h1 {
+    color: #e1e1e1;
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-left: 130px; /* Add slight margin to move it to the right */
+}
+
+.search-bar {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    margin-left: 130px;
+    margin-top: 0;
+}
+
+.search-bar input {
+    padding: 4px 10px;
+    border: none;
+    width: 500px;
+    outline: none;
+    font-size: 14px;
+}
+ 
+button.content {
+    background-color: #e94b35;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.content:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/* Logo Styling */
+.logo {
+    width: 50px; /* Adjust this size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
